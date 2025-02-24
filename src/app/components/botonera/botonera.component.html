@@ -1,0 +1,24 @@
+<section>
+        <div class="center">
+                @if(parent == 'card'){
+                <!-- si el padre de este elemento es 'card', la ruta del boton sera 'user/:id' -->
+                <a [routerLink]="['/user', _id]" class="btn btn-transparent btn-sm">
+                        <img src="icons/detalle.svg" alt="Icono detalle">
+                        <p>Ver detalle</p>
+                </a>
+                }@else if(parent == 'view'){ <!-- si el padre es igual a 'view', la ruta del boton sera 'home' -->
+                <a [routerLink]="['/home']" class="btn btn-transparent btn-sm">
+                        <img src="icons/volver.svg" alt="Icono volver">
+                        <p>Volver al listado</p>
+                </a>
+                }
+                <a [routerLink]="['/updateuser', _id]" class="btn btn-transparent btn-sm">
+                        <img src="icons/actualizar.svg" alt="Icono actualizar">
+                        <p>Actualizar</p>
+                </a>
+                <button class="btn btn-transparent btn-sm btn-borrar" (click)="deleteUser(_id)">
+                        <img src="icons/borrar.svg" alt="Icono borrar">
+                        <p>Borrar</p>
+                </button>
+        </div>
+</section>

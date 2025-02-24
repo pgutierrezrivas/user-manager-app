@@ -1,0 +1,25 @@
+.navbar-nav .nav-item .nav-link.active {
+    font-weight: 700;
+    color: #253064;
+    background-color: #CFE2FF;
+    padding: 7px;
+    border-radius: 0.375rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin: 0 8px;
+    color: #253064;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    color: #253064;
+}
+
+.navbar-toggler {
+    color: transparent;
+}

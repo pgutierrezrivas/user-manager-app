@@ -1,0 +1,35 @@
+.card {
+    border: 2px solid #34558B;
+    min-height: 28rem;
+}
+
+.card-image {
+    padding-right: 2rem;
+}
+
+.card-image img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+}
+
+.card-body {
+    border-left: 2px solid #34558B;
+    padding-left: 2.8rem;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .card-image {
+        padding-right: 0;
+    }
+
+    .card-image img {
+        width: 60%;
+    }
+
+}

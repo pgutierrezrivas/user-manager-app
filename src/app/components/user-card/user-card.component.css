@@ -1,0 +1,29 @@
+.card {
+    border: 2px solid #34558B;
+}
+
+.card-header img {
+    max-width: 100%;
+    width: 160px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.card-body {
+    min-height: 5rem;
+}
+
+.card-body h5 {
+    font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* hace la tarjeta mas ancha */
+        min-height: auto; /* elimina altura fija */
+    }
+
+    .card-body {
+        min-height: 0;
+    }
+}

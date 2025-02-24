@@ -1,0 +1,17 @@
+<div class="card-deck">
+    <div class="card shadow text-center mb-4">
+        <!-- card header -->
+        <div class="card-header border-0 bg-transparent pt-3">
+            <img [src]="myUser.image" class="card-img-top img-fluid" [alt]="myUser.username || 'User image'"
+                aria-hidden="true">
+        </div>
+        <!-- card body -->
+        <div class="card-body center">
+            <h5 class="color-blue fw-bold">{{myUser.first_name}} {{myUser.last_name}}</h5>
+        </div>
+        <!-- card footer -->
+        <div class="card-footer border-0 bg-transparent pb-1">
+            <app-botonera [parent]="'card'" [_id]="myUser._id"></app-botonera>
+        </div>
+    </div>
+</div>

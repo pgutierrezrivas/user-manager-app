@@ -1,0 +1,24 @@
+.btn {
+    font-size: smaller;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-3px); /* efecto de levitación al hacer hover */
+}
+
+.btn img {
+    max-width: 1.5rem;
+}
+
+.btn p {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: black;
+    font-size: 12px;
+}
+
+.btn-borrar:hover p {
+    color: red;
+}
