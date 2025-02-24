@@ -35,7 +35,7 @@ export class UsersService {
 
   // DELETE
   delete(_id: string): Observable<User> {
-    return this.httpClient.delete<User>(`${this.baseUrl}/${_id}`); // recibo el id y le paso la ruta de la que tiene que hacer el id
+    return this.httpClient.delete<User>(`${this.baseUrl}/${_id}`);
   }
 
 }

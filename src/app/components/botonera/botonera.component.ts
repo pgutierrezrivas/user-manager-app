@@ -24,7 +24,7 @@ export class BotoneraComponent {
     this.parent = "";
   }
 
-  deleteUser(_id: string) { // llamo al servicio para borrar la serie
+  deleteUser(_id: string) {
     let confirmation = confirm('Esta seguro de que quiere eliminar el usuario: ' + this._id);
     if (confirmation) {
       // llamo al servicio para eliminar el usuario
